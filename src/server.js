@@ -6,6 +6,7 @@ import "./passport";
 import { authenticateJwt } from "./passport";
 import schema from "./schema";
 import { sendSecretMail } from "./utils";
+import { isAuthenticated } from "./middlewares";
 // import { prisma } from "../generated/prisma-client";
 
 sendSecretMail("inegg.apps@gmail.com", "hello world");
@@ -15,7 +16,7 @@ const PORT = process.env.PORT || 4000;
 const server = new GraphQLServer({
   schema /*,context: { prisma }*/,
   context: ({ request }) => {
-    return { request };
+    return { request, isAuthenticated };
   }
 });
 
