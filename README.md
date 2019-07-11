@@ -6,8 +6,8 @@ Instagram clone with Exporess + Prisma + React and React Native
 
 - [x] Create account
 - [x] Requeset Secret (request key to log in with nodemailer)
-- [ ] Confirm Secret (Login)
-- [ ] Like / Unlike a photo
+- [x] Confirm Secret (Login)
+- [x] Like / Unlike a photo
 - [ ] Comment on a photo \*(I will skip delete, modify a comment)
 - [ ] Search by user
 - [ ] Search by location
