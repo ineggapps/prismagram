@@ -12,10 +12,11 @@ Instagram clone with Exporess + Prisma + React and React Native
 - [x] Search by location
 - [x] Follow
 - [x] Unfollow User
+- [x] Edit my profile
+- [x] See user profile
+- [] See my profile
 - [ ] Comment on a photo \*(I will skip delete, modify a comment)
-- [ ] See user profile
 - [ ] See the full photo
-- [ ] Edit my profile
 - [ ] Upload a photo
 - [ ] Edit the photo (Delete)
 - [ ] See the feed
