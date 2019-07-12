@@ -90,3 +90,4 @@ typings/
 #prisma
 generated
 prisma.yml
+memo.txt
