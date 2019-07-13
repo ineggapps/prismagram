@@ -1,4 +1,5 @@
 import { prisma } from "./../../../generated/prisma-client";
+import { isAuthenticated } from "./../../middlewares";
 
 export default {
   User: {
@@ -22,6 +23,17 @@ export default {
       const { user } = request;
       const { id: parentId } = parent;
       return user.id === parentId;
+    }
+  },
+  Post: {
+    isLiked: async (parent, _, { request, isAuthenticated }) => {
+      isAuthenticated(request);
+      const { user } = request;
+      const { id } = parent;
+      console.log("🧨", parent, id, user);
+      return prisma.$exists.like({
+        AND: [{ user: { id: user.id } }, { post: { id } }]
+      });
     }
   }
 };
