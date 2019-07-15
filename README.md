@@ -16,11 +16,10 @@ Instagram clone with Exporess + Prisma + React and React Native
 - [x] See user profile
 - [x] See my profile
 - [x] Upload a post and files
-- [ ] Comment on a photo (I will skip delete, modify a comment)
-- [ ] See the full photo
-- [ ] Edit the photo (Delete)
-- [ ] See the feed
-- [ ] See rooms
-- [ ] See room
+- [x] See the full photo
+- [x] Edit the photo (Delete)
+- [x] See the feed
 - [ ] Send private Message
+- [x] See rooms
+- [ ] See room
 - [ ] Receive Message (Realtime)
