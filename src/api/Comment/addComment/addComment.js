@@ -1,3 +1,5 @@
+import { prisma } from "../../../../generated/prisma-client";
+
 export default {
   Mutation: {
     addComment: async (_, args, { request, isAuthenticated }) => {
@@ -12,7 +14,7 @@ export default {
         },
         post: {
           connect: {
-            id: post.id
+            id: postId
           }
         },
         text
